@@ -1,6 +1,6 @@
 import smtplib, ssl
 import datetime
-from scraper import check_returns as is_returns_open_method
+from scraper import check_returns as is_returns_open_function
 
 
 """ the function below takes in true/false and generates a body text for the email """
@@ -24,7 +24,7 @@ def send_email(password):
     receiver_email = "dhirajc963+ikea_update@gmail.com"
     message = f""" \
     Subject: IKEA QUEENS \n
-    \n{generate_message_body(is_returns_open_method())} \
+    \n{generate_message_body(is_returns_open_function())} \
     \n
     At {datetime.datetime.now().strftime("%d %B, %Y, %I:%M %p")}
     \n
