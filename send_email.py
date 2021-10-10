@@ -3,6 +3,7 @@ import datetime
 from scraper import check_returns as is_returns_open_method
 
 
+""" the function below takes in true/false and generates a body text for the email """
 def generate_message_body(is_returns_open):
     if is_returns_open is True:
         body = "Yay, the returns is finally open!"
@@ -11,6 +12,11 @@ def generate_message_body(is_returns_open):
     return body
 
 
+""" 
+-- the function below takes in the password and send an email
+-- it also calls the check_returns function (located in the scraper file) where
+    the status of if the store's returns department is open is updated
+"""
 def send_email(password):
     port = 465
     smtp_server = "smtp.gmail.com"
