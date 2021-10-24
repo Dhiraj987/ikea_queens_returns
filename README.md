@@ -8,4 +8,4 @@ BG- The Queens Ikea store hasn't resumed the returns department since the Ida Fl
 
 ### This program saves me the hastle of repeating the process over and over again!
 
-Tools used- Selenium, BeautifulSoup and SMTP protocol client.
+Tools used- AWS, Docker, Selenium, BeautifulSoup and SMTP protocol client.
