@@ -9,11 +9,11 @@ send_email function in the other file
 """
 def app_loop():
     while True:
-        send_email(password)
+        send_email()
         time.sleep(7200)
 
 
 """ when this file is called the app_loop method is executed """
 if __name__ == '__main__':
-    password = input("Type your password and press enter: ")
     app_loop()
+    
